@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Edge - Men's Gold Silver Rolex Watch</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: #0a0a0a; color: #fff; line-height: 1.6; }
+        .header { background-color: #000; padding: 20px; text-align: center; border-bottom: 2px solid #b8860b; }
+        .logo { max-width: 150px; height: auto; }
+        .main-container { max-width: 1000px; margin: 20px auto; padding: 20px; display: flex; flex-wrap: wrap; gap: 30px; background-color: #141414; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+        .image-gallery { flex: 1; min-width: 300px; text-align: center; }
+        .product-image { width: 100%; max-width: 450px; border-radius: 10px; border: 1px solid #333; transition: transform 0.3s ease; }
+        .thumbnail-container { display: flex; justify-content: center; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+        .thumbnail { width: 60px; height: 60px; border-radius: 6px; border: 2px solid transparent; cursor: pointer; object-fit: cover; }
+        .thumbnail.active { border-color: #b8860b; }
+        .product-details { flex: 1.2; min-width: 300px; padding: 10px; }
+        .product-title { font-size: 28px; font-weight: bold; color: #f5c518; margin-bottom: 10px; letter-spacing: 1px; }
+        .price-tag { font-size: 26px; color: #2ecc71; font-weight: bold; margin-bottom: 5px; }
+        .shipping { font-size: 14px; color: #aaa; margin-bottom: 25px; font-style: italic; }
+        .specs-title { font-size: 18px; color: #ddd; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .specs-list { list-style: none; padding: 0; margin-bottom: 30px; }
+        .specs-list li { padding: 10px 0; border-bottom: 1px solid #333; font-size: 15px; color: #ccc; }
+        .specs-list strong { color: #fff; }
+        .btn-whatsapp { display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #25d366; color: white; padding: 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-whatsapp:hover { background-color: #1aae53; }
+        .footer { text-align: center; font-size: 12px; color: #555; margin: 40px 0; padding: 20px; }
+        @media (max-width: 768px) { .main-container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="Time Edge Logo" class="logo">
+    </div>
+
+    <div class="main-container">
+        <div class="image-gallery">
+            <img id="mainImage" src="watch1.png" alt="Men's Rolex Watch" class="product-image">
+            <div class="thumbnail-container">
+                <img src="watch1.png" alt="View 1" class="thumbnail active" onclick="changeImage(this)">
+                <img src="watch2.png" alt="View 2" class="thumbnail" onclick="changeImage(this)">
+                <img src="watch3.png" alt="View 3" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <div class="product-title">Men’s Gold Silver Rolex Watch 40mm (Daily Wear)</div>
+            <div class="price-tag">Rs. 3,600</div>
+            <div class="shipping">Delivery: Free</div>
+
+            <div class="specs-title">Product Specifications</div>
+            <ul class="specs-list">
+                <li><strong>Material:</strong> Stainless Steel</li>
+                <li><strong>Strap:</strong> Chain Strap</li>
+                <li><strong>Gender:</strong> Men's</li>
+                <li><strong>Case Shape:</strong> Round</li>
+                <li><strong>Display:</strong> 12-Hour Format</li>
+                <li><strong>Feature:</strong> Comfortable Daily Wear</li>
+                <li><strong>Dial Diameter:</strong> 40 mm</li>
+            </ul>
+
+            <a href="https://wa.me/923339630558?text=Asalamo%20Alaikum,%20I%20want%20to%20order%20the%20Men's%20Gold%20Silver%20Rolex%20Watch%20for%20Rs.%203,600." class="btn-whatsapp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="24">
+                Order via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Time Edge. All Rights Reserved.<br>
+        Rawalpindi, Punjab, Pakistan.
+    </div>
+
+    <script>
+        function changeImage(element) {
+            document.getElementById('mainImage').src = element.src;
+            let thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
